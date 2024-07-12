@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- displays site properly based on user's device -->
+
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+      <title>Frontend Mentor | Blog preview card</title>
+
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+      <style>
+            * {
+                  margin: 0;
+                  padding: 0;
+                  gap: 0;
+            }
+
+            body {
+                  display: flex;
+                  max-width: 1440px;
+                  max-height: 960px;
+                  background: var(--Yellow, #F4D04E);
+                  font-family: 'Figtree', sans-serif;
+                  justify-content: center;
+                  align-items: center;
+            }
+
+            .card {
+                  display: flex;
+                  width: 384px;
+
+                  padding: 24px;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  flex-shrink: 0;
+                  gap: 24px;
+                  margin: auto;
+                  border-radius: 20px;
+                  border: 1px solid var(--Black, #111);
+                  background: var(--Pure-White, #FFF);
+                  box-shadow: 8px 8px 0px 0px #000;
+
+            }
+
+            @media screen and (max-width: 768px) {
+                  .card {
+                        width: 327px;
+                  }
+            }
+
+            .card:hover {
+                  box-shadow: 16px 16px 0px 0px #000;
+            }
+
+            .img {
+                  width: 100%;
+                  height: auto;
+                  border-radius: 20px;
+            }
+
+            .card-name {
+                  display: flex;
+                  width: fit-content;
+                  height: 29px;
+
+                  align-items: center;
+                  flex-shrink: 0;
+                  padding: 4px 12px;
+                  border-radius: 4px;
+                  background: var(--Yellow, #F4D04E);
+            }
+
+            .card-name p {
+                  color: var(--Black, #111);
+                  font-family: Figtree;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 800;
+                  line-height: 150%;
+            }
+
+            .date {
+                  color: var(--Black, #111);
+
+                  /* Body S (Regular) */
+                  font-family: Figtree;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 150%;
+                  /* 21px */
+            }
+
+            .title {
+                  align-self: stretch;
+                  color: var(--Black, #111);
+
+                  /* Heading */
+                  font-family: Figtree;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 800;
+                  line-height: 150%;
+                  /* 36px */
+            }
+
+            .title:hover {
+                  color: var(--Yellow, #F4D04E);
+            }
+
+            .subtitle {
+                  align-self: stretch;
+                  color: var(--Grey, #7F7F7F);
+                  font-family: Figtree;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 150%
+            }
+
+            .name {
+                  color: var(--Black, #111);
+                  font-family: Figtree;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 800;
+                  line-height: 150%
+            }
+
+            .autor {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  cursor: pointer;
+            }
+
+            .autor img {
+                  width: 32px;
+                  height: 32px;
+                  border-radius: 50%;
+            }
+
+            .card-down {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                  padding-right: 24px;
+            }
+      </style>
+</head>
+
+<body>
+      <div class="card">
+            <img class="img" src="assets/images/illustration-article.svg" alt="">
+            <div class="card-down">
+                  <div class="card-name">
+                        <p>Learning</p>
+                  </div>
+                  <p classs="date">Published 21 Dec 2023</p>
+                  <h3 class="title">HTML & CSS foundations</h3>
+                  <p class="subtitle">These languages are the backbone of every website, defining structure, content,
+                        and
+                        presentation.</p>
+            </div>
+            <div class="autor">
+                  <img src="assets/images/image-avatar.webp" alt="">
+                  <p class="name">Greg Hooper</p>
+            </div>
+
+      </div>
+</body>
+
+</html>
