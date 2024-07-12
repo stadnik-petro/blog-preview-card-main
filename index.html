@@ -21,10 +21,10 @@
                   gap: 0;
             }
 
-            body {
+            .app {
                   display: flex;
                   max-width: 1440px;
-                  max-height: 960px;
+                  height: 100vh;
                   background: var(--Yellow, #F4D04E);
                   font-family: 'Figtree', sans-serif;
                   justify-content: center;
@@ -156,23 +156,26 @@
 </head>
 
 <body>
-      <div class="card">
-            <img class="img" src="assets/images/illustration-article.svg" alt="">
-            <div class="card-down">
-                  <div class="card-name">
-                        <p>Learning</p>
+      <div class="app">
+            <div class="card">
+                  <img class="img" src="assets/images/illustration-article.svg" alt="">
+                  <div class="card-down">
+                        <div class="card-name">
+                              <p>Learning</p>
+                        </div>
+                        <p classs="date">Published 21 Dec 2023</p>
+                        <h3 class="title">HTML & CSS foundations</h3>
+                        <p class="subtitle">These languages are the backbone of every website, defining structure,
+                              content,
+                              and
+                              presentation.</p>
                   </div>
-                  <p classs="date">Published 21 Dec 2023</p>
-                  <h3 class="title">HTML & CSS foundations</h3>
-                  <p class="subtitle">These languages are the backbone of every website, defining structure, content,
-                        and
-                        presentation.</p>
-            </div>
-            <div class="autor">
-                  <img src="assets/images/image-avatar.webp" alt="">
-                  <p class="name">Greg Hooper</p>
-            </div>
+                  <div class="autor">
+                        <img src="assets/images/image-avatar.webp" alt="">
+                        <p class="name">Greg Hooper</p>
+                  </div>
 
+            </div>
       </div>
 </body>
 
